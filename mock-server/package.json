@@ -1,0 +1,10 @@
+{
+  "name": "static-site-mock-server",
+  "main": "index.ts",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "npx nodemon ./index.ts",
+    "start": "npx ts-node ./index.ts",
+    "build": "npx tsc"
+  }
+}
