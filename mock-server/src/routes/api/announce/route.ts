@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getAnnounce, getAnnounceList } from '../../controllers/announces.control';
+import { getAnnounce, getAnnounceList } from '@/controllers/announces.control';
 
 const router = Router();
 

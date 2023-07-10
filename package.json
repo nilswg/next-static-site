@@ -6,7 +6,7 @@
     "dev": "concurrently -n mock,next \"npm run mock\" \"next dev\"",
     "build": "concurrently -n mock,next \"npm run mock\" \"next build\"",
     "lint": "next lint",
-    "mock": "npx ts-node ./mock-server/index.ts"
+    "mock": "node ./mock-server"
   },
   "dependencies": {
     "@types/node": "20.4.0",
@@ -25,6 +25,8 @@
     "concurrently": "^7.6.0",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.7",
+    "tsconfig-paths": "^4.2.0"
   }
 }

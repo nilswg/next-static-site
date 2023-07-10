@@ -1,10 +1,10 @@
 {
   "name": "static-site-mock-server",
-  "main": "index.ts",
+  "main": "./dist/index.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "npx nodemon ./index.ts",
-    "start": "npx ts-node ./index.ts",
-    "build": "npx tsc"
+    "dev": "npx nodemon -e ts,js --exec ts-node -r tsconfig-paths/register ./src/index.ts",
+    "start": "npx ts-node -r tsconfig-paths/register ./src/index.ts",
+    "build": "rm -rf dist && npx tsc && npx tsc-alias"
   }
 }

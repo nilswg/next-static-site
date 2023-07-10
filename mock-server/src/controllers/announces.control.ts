@@ -1,4 +1,4 @@
-import { announces } from '../mock/announces.mock';
+import { announces } from "../mock/announces.mock";
 
 export const getAnnounceList = () => {
   return { announces };
